@@ -261,7 +261,7 @@ class _SmartFaceCameraState extends State<SmartFaceCamera>
               )),
       onPressed: widget.controller.enableControls && !_disableCapture
           ? () {
-        if (value.detectedFace != null && value.detectedFace.wellPositioned) {
+        if (value.detectedFace != null && value.detectedFace!.wellPositioned) {
           widget.controller.captureImage();
         }
       }
